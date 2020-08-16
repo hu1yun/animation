@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main{
+    background-color: gray;
+    float: left;
+}
+
+.canvas-form{
+    float:left;
+    padding: 20px;
+}
+.canvas-form-label{
+    display: block;
+    margin-top: 10px;
+}
+.canvas-form>div:first-child>.canvas-form-label{
+    margin-top: 0px;
+}
+.canvas-form-button{
+    margin-top: 10px;
+}
+
+
+
+/* for animation window */
+
+.animation-window{
+    top: 0px;
+    left: 0px;
+    background-color: whitesmoke;
+    position: fixed;
+}
+
+.generic-canvas{
+    background-color: brown;
+    display: block;
+}
+.animation-form{
+    position: absolute;
+    top: 0%;
+    transition: top 0.5s;
+    z-index: -1;
+}
+.animation-form.shown{
+    top: 100%;
+}
+.form-item{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.form-item-label{
+    display: block;
+}
+.form-item-input{
+    width: 50%;
+}
+/* end here */

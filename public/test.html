@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="animation-tester.css">
+    <script src='animation-window.js'></script>
+    <style>
+        body{
+            display: initial;
+        }
+        .custom-window{
+            position: relative;
+            float: left;
+        }
+    </style>
+    <title>test</title>
+    
+</head>
+<body>
+    <script>
+        let body = document.body;
+        let config;
+        config = {
+            id: 'w1',
+            width: '200',
+            height: '200',
+            fps: 3
+        }
+        let w1 = document.createElement('div');
+        w1.setAttribute('id', 'w1');
+        w1.setAttribute('class', 'animation-window custom-window'); 
+        body.appendChild(w1);
+        let aw1 = new AnimationWindow(config);
+
+        config = {
+            id: 'w2',
+            width: '400',
+            height: '200',
+            fps: 6
+        }
+        let w2 = document.createElement('div');
+        w2.setAttribute('id', 'w2');
+        w2.setAttribute('class', 'animation-window custom-window'); 
+        body.appendChild(w2);
+        let aw2 = new AnimationWindow(config);
+
+    </script>
+</body>
+</html>

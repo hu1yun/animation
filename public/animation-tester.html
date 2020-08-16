@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="animation-tester.css">
+    <script src='jquery.min.js'></script>	
+    <script src='animation-window.js'></script>
+    <script src='animation-tester.js'></script>
+    <title>test</title>
+    
+</head>
+<body>
+    <div>
+        <canvas id='main' width='250' height='250'></canvas>
+        <form id='config' class='canvas-form'>
+            <div>
+                <label class='canvas-form-label' for="image-name">Image Name</label>
+                <input name='image-name' type="text">
+            </div>
+            <div>
+                <label class='canvas-form-label' for="index-start">Index Start</label>
+                <input name='index-start' type="text">
+            </div>
+            <div>
+                <label class='canvas-form-label' for="index-end">Index End</label>
+                <input name='index-end' type="text">
+            </div>
+            <div>
+                <label class='canvas-form-label' for="duration">Animation Duration</label>
+                <input name='duration' type="text">
+            </div>
+            <div>
+                <button class='canvas-form-button'>Save</button>
+            </div>
+        </form>
+    </div>
+    <div id='window' class='animation-window'>
+
+    </div>
+    <!-- <canvas id='main' width='250' height='250'></canvas>
+    <img id='a001' src="frames/a001.PNG" alt="">
+    <img id='a002' src="frames/a002.PNG" alt="">
+    <img id='a003' src="frames/a003.PNG" alt=""> -->
+</body>
+
+</html>

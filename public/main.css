@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+}
+
+
+
+.side-menu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    transition: top 0.5s, left 0.5s;
+    
+}
+.temp-button{
+    width: 100px;
+    height: 120px;
+    background-color: wheat;    
+}
+
+.side-menu.hidden{
+    left: -100px;
+}
